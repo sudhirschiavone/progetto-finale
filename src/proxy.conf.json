@@ -1,6 +1,6 @@
 {
     "/echo":{
-        "target":"172.22.0.1",
+        "target":"127.0.0.1:4200",
         "secure":true,
         "changeOrigin":true,
         "logLevel":"debug"
