@@ -6,9 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './sharepage/navbar/navbar.component';
 import { FooterComponent } from './sharepage/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
-import { MenuComponent } from './pages/menu/menu.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
+import { ListinoComponent } from './pages/listino/listino.component';
 
 @NgModule({
   declarations: [
@@ -16,9 +16,9 @@ import { AboutComponent } from './pages/about/about.component';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    MenuComponent,
     ContactComponent,
     AboutComponent,
+    ListinoComponent,
   ],
   imports: [
     BrowserModule,
