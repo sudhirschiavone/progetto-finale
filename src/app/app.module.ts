@@ -9,6 +9,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ListinoComponent } from './pages/listino/listino.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import { PaginatorComponent } from './sharepage/paginator/paginator.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -19,11 +23,16 @@ import { ListinoComponent } from './pages/listino/listino.component';
     ContactComponent,
     AboutComponent,
     ListinoComponent,
+    PaginatorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatPaginatorModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
