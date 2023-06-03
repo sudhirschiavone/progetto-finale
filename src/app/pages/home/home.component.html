@@ -1,108 +1,48 @@
-
+<div class="banner">
+    <div class="content">
+        <h1 class="mb-5">New Motorcycle At Your Door.</h1>
+        <a routerLink="menu">ORDER NOW <i class="bi bi-arrow-right"></i></a>
+    </div>
+</div>
+<!-- step  -->
 <div class="container mt-5 mb-5">
-
-    <div class="row" >
-<!--  inserimento di tutte le moto     in divcol-lg-4 *ngFor="let fd of Motors.Data">-->
-        <div class="col-lg-4">
-            <div class="Motors.box mt-3 mb-3">
-            <mat-card class="card">
-                <mat-card-header>
-                  <div  mat-card-avatar class="header-image"></div>
-                  <mat-card-title><!--{{Motors.nome}}-->Shiba Inu</mat-card-title>
-                </mat-card-header >
-                <!--{{Motors.immagine_url}}-->
-                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-              
-            <!--<div class="Motors.box mt-3 mb-3">
-                <img src="{{fd.Motors.Img}}">
-                <h1>{{fd.Motors.Name}}</h1>
-                <p>{{fd.Motors.Details}}</p>
-                <p>{{fd.Motors.Price | currency:'INR'}}</p>
-                <br/>
-                <a class="buybtn" [routerLink]="['/menu',fd.id]">Buy Now &nbsp;<i class="bi bi-bag"></i></a>
-            </div>-->
-            
-        </mat-card>
-        </div>
-
-    </div>
-    <div class="col-lg-4">
-        <div class="Motors.box mt-3 mb-3">
-        <mat-card class="card">
-            <mat-card-header>
-              <div  mat-card-avatar class="header-image"></div>
-              <mat-card-title><!--{{Motors.nome}}-->Shiba Inu</mat-card-title>
-            </mat-card-header >
-            <!--{{Motors.immagine_url}}-->
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-    </mat-card>
-    </div>
-
-</div>
-<div class="col-lg-4">
-    <div class="Motors.box mt-3 mb-3">
-    <mat-card class="card">
-        <mat-card-header>
-          <div  mat-card-avatar class="header-image"></div>
-          <mat-card-title><!--{{Motors.nome}}-->Shiba Inu</mat-card-title>
-        </mat-card-header >
-        <!--{{Motors.immagine_url}}-->
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-</mat-card>
-</div>
-</div>
-
-</div>
-<div class="row">
-    <!--  inserimento di tutte le moto     in divcol-lg-4 *ngFor="let fd of Motors.Data">-->
-            <div class="col-lg-4">
-                <div class="Motors.box mt-3 mb-3">
-                <mat-card class="card">
-                    <mat-card-header>
-                      <div  mat-card-avatar class="header-image"></div>
-                      <mat-card-title><!--{{Motors.nome}}-->Shiba Inu</mat-card-title>
-                    </mat-card-header >
-                    <!--{{Motors.immagine_url}}-->
-                    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-                  
-                <!--<div class="Motors.box mt-3 mb-3">
-                    <img src="{{fd.Motors.Img}}">
-                    <h1>{{fd.Motors.Name}}</h1>
-                    <p>{{fd.Motors.Details}}</p>
-                    <p>{{fd.Motors.Price | currency:'INR'}}</p>
-                    <br/>
-                    <a class="buybtn" [routerLink]="['/menu',fd.id]">Buy Now &nbsp;<i class="bi bi-bag"></i></a>
-                </div>-->
-                
-            </mat-card>
+    <h1 class="text-center">How to get <span class="highlight">a Motorcycle</span></h1>
+    <div class="row mt-5">
+        <!-- one  -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>1</h1>
+                <p>select the Motorcycle</p>
             </div>
-    
         </div>
-        <div class="col-lg-4">
-            <div class="Motors.box mt-3 mb-3">
-            <mat-card class="card">
-                <mat-card-header>
-                  <div  mat-card-avatar class="header-image"></div>
-                  <mat-card-title><!--{{Motors.nome}}-->Shiba Inu</mat-card-title>
-                </mat-card-header >
-                <!--{{Motors.immagine_url}}-->
-                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-        </mat-card>
+<!-- two -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>2</h1>
+                <p>fill the details</p>
+            </div>
         </div>
-    
+        <!-- three  -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>3</h1>
+                <p>your order delivered in some business days</p>
+            </div>
+        </div>
     </div>
-    <div class="col-lg-4">
-        <div class="Motors.box mt-3 mb-3">
-        <mat-card class="card">
-            <mat-card-header>
-              <div  mat-card-avatar class="header-image"></div>
-              <mat-card-title><!--{{Motors.nome}}-->Shiba Inu</mat-card-title>
-            </mat-card-header >
-            <!--{{Motors.immagine_url}}-->
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-    </mat-card>
-    </div>
-    </div>
-    
-    </div>
+</div>
 
+<!-- foodbox  -->
+<div class="container mt-4 mb-4">
+    <h1 class="text-center">Customers <span class="highlight">Favourites Food</span></h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor="let m of MotoData;index as i">
+            <div class="foodbox" *ngIf="i<=3">
+                <img src="{{m.Immagine}}" />
+                <h1>{{m.Modello}}</h1>
+                <p>{{m.Prezzo | currency:'EUR'}}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="menu" class="viewmorebtn">visualizza dettagli <i class="bi bi-arrow-right"></i></a>
+</div>
