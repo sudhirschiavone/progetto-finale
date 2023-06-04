@@ -11,8 +11,9 @@ import { AboutComponent } from './pages/about/about.component';
 import { ListinoComponent } from './pages/listino/listino.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
-import { PaginatorComponent } from './sharepage/paginator/paginator.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { SingoloComponent } from './pages/singolo/singolo.component';
+import { JoinnowComponent } from './pages/joinnow/joinnow.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     ContactComponent,
     AboutComponent,
     ListinoComponent,
-    PaginatorComponent,
+    SingoloComponent,
+    JoinnowComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
 <div class="banner">
     <div class="content">
         <h1 class="mb-5">New Motorcycle At Your Door.</h1>
-        <a routerLink="menu">ORDER NOW <i class="bi bi-arrow-right"></i></a>
+        <a routerLink="listino">ORDER NOW <i class="bi bi-arrow-right"></i></a>
     </div>
 </div>
 <!-- step  -->
@@ -31,18 +31,31 @@
         </div>
     </div>
 </div>
-
-<!-- foodbox  -->
+<!-- marcabox  -->
 <div class="container mt-4 mb-4">
-    <h1 class="text-center">Customers <span class="highlight">Favourites Food</span></h1>
+    <h1 class="text-center">Customers <span class="highlight">Favourites Brand</span></h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor="let marca of MarcaData;index as i">
+            <div class="Motobox" *ngIf="i<=3">
+                <img src="{{marca.Immagine}}" />
+                <h1>{{marca.Nome}}</h1>
+            </div>
+        </div>
+    </div>
+    <a routerLink="listino" class="viewmorebtn">visualizza dettagli <i class="bi bi-arrow-right"></i></a>
+</div>
+
+<!-- motobox  -->
+<div class="container mt-4 mb-4">
+    <h1 class="text-center">Customers <span class="highlight">Favourites Moto</span></h1>
     <div class="row">
         <div class="col-lg-3 mt-3" *ngFor="let m of MotoData;index as i">
-            <div class="foodbox" *ngIf="i<=3">
+            <div class="Motobox" *ngIf="i<=3">
                 <img src="{{m.Immagine}}" />
                 <h1>{{m.Modello}}</h1>
                 <p>{{m.Prezzo | currency:'EUR'}}</p>
             </div>
         </div>
     </div>
-    <a routerLink="menu" class="viewmorebtn">visualizza dettagli <i class="bi bi-arrow-right"></i></a>
+    <a routerLink="listino" class="viewmorebtn">visualizza dettagli <i class="bi bi-arrow-right"></i></a>
 </div>

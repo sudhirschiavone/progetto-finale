@@ -1,0 +1,29 @@
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg-6" *ngIf="listinoData">
+            <a routerLink="../../listino" class="btn btn-sm btn-dark mb-3 ">Back</a>
+            <img src="{{listinoData[0].Immagine}}" width="100%"/>
+            <h1 class="mt-3">{{listinoData[0].Modello}}</h1>
+            <p>{{listinoData[0].MarcaNome}}</p><br>
+            <p>{{listinoData[0].Anno}}</p><br>
+            <p>{{listinoData[0].Cilindrata}}</p><br>
+            <p>{{listinoData[0].Prezzo | currency :'INR'}}</p><br>
+            <p>{{listinoData[0].Descrizione}}</p>
+
+        </div>
+
+        <div class="col-lg-6 col-12">
+            <h1>Enter Your Details</h1>
+            <form>
+
+                <input type="text" class="form-control" placeholder="Enter Your Full Name" />
+                <input type="text" class="form-control" placeholder="Enter Your Mobile" />
+                <textarea class="form-control" placeholder="Enter Your Address"></textarea>
+                <button class="btn btn-md btn-dark mt-3">Place Order</button>
+
+            </form>
+        </div> 
+    </div>
+</div>

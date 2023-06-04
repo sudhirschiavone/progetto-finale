@@ -1,6 +1,6 @@
 .navbar-light .navbar-nav .nav-link.active-link
 {
-    color:var(--primary-color);
+    color:var(--secondary-color);
     text-decoration: underline;
 
 }
@@ -11,4 +11,5 @@
 .navbar
 {
     color:var(--secondary-color);
+    background-color:var(--primary-color);
 }

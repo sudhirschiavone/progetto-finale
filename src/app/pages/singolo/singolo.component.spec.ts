@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaginatorComponent } from './paginator.component';
+import { SingoloComponent } from './singolo.component';
 
-describe('PaginatorComponent', () => {
-  let component: PaginatorComponent;
-  let fixture: ComponentFixture<PaginatorComponent>;
+describe('SingoloComponent', () => {
+  let component: SingoloComponent;
+  let fixture: ComponentFixture<SingoloComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PaginatorComponent]
+      declarations: [SingoloComponent]
     });
-    fixture = TestBed.createComponent(PaginatorComponent);
+    fixture = TestBed.createComponent(SingoloComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -8,10 +8,13 @@ import { MotoService } from 'src/app/Dati/moto.service';
 })
 export class HomeComponent implements OnInit{
     MotoData:any;
+    MarcaData:any;
     constructor(private service:MotoService){
 
     }
     ngOnInit():void{
       this.MotoData=this.service.Moto;
+      this.MarcaData=this.service.Marca;
+
     }
 }
