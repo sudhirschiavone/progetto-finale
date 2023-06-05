@@ -13,7 +13,6 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { SingoloComponent } from './pages/singolo/singolo.component';
-import { JoinnowComponent } from './pages/joinnow/joinnow.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,6 @@ import { JoinnowComponent } from './pages/joinnow/joinnow.component';
     AboutComponent,
     ListinoComponent,
     SingoloComponent,
-    JoinnowComponent,
   ],
   imports: [
     BrowserModule,

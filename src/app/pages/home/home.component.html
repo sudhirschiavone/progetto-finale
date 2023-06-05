@@ -31,19 +31,6 @@
         </div>
     </div>
 </div>
-<!-- marcabox  -->
-<div class="container mt-4 mb-4">
-    <h1 class="text-center">Customers <span class="highlight">Favourites Brand</span></h1>
-    <div class="row">
-        <div class="col-lg-3 mt-3" *ngFor="let marca of MarcaData;index as i">
-            <div class="Motobox" *ngIf="i<=3">
-                <img src="{{marca.Immagine}}" />
-                <h1>{{marca.Nome}}</h1>
-            </div>
-        </div>
-    </div>
-    <a routerLink="listino" class="viewmorebtn">visualizza dettagli <i class="bi bi-arrow-right"></i></a>
-</div>
 
 <!-- motobox  -->
 <div class="container mt-4 mb-4">
@@ -57,5 +44,5 @@
             </div>
         </div>
     </div>
-    <a routerLink="listino" class="viewmorebtn">visualizza dettagli <i class="bi bi-arrow-right"></i></a>
+    <a routerLink="listino" class="viewmorebtn">altre <i class="bi bi-arrow-right"></i></a>
 </div>
